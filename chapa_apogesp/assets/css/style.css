@@ -261,3 +261,38 @@ html {
         grid-template-columns: repeat(1, 1fr); /* 1 coluna no celular */
     }
 }
+
+/* Lista moderna para Temas Prioritários */
+.temas-list {
+    list-style: none; /* Remove os bullets padrão */
+    padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Cada item da lista */
+.temas-list li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: 15px 20px 15px 50px; /* Espaço interno e margem para o bullet */
+    position: relative;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    border: 2px solid var(--secondary-color); /* Borda na cor secundária */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    background-color: var(--inverse-text-color); /* Fundo para melhor contraste */
+    display: flex;
+    align-items: center; /* Centraliza o bullet e o texto */
+}
+
+/* Adiciona bullet points estilizados dentro da borda */
+.temas-list li::before {
+    content: "●"; /* Ícone customizado */
+    font-size: 1.3rem;
+    color: var(--highlight-color); /* Cor do destaque */
+    position: absolute;
+    left: 15px; /* Mantém o bullet dentro da borda */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
