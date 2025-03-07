@@ -169,3 +169,48 @@ html {
     font-size: 3.5rem;
     font-weight: 300;
 }
+
+/* Seção Diagnóstico - Layout centralizado */
+.diagnostico-container {
+    display: flex;
+    flex-direction: column; /* Coloca tudo em uma coluna centralizada */
+    align-items: center; /* Garante centralização horizontal */
+    text-align: center;
+    max-width: 80%; /* Mantém o conteúdo mais concentrado */
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Imagem Centralizada */
+.diagnostico-img {
+    width: 50%; /* Ajuste de tamanho para manter proporção */
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Ajuste no tamanho dos parágrafos */
+.diagnostico-text p {
+    font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor leitura */
+    color: var(--text-color);
+    margin-bottom: 15px; /* Dá um respiro entre os parágrafos */
+}
+
+
+/* Ajuste para Títulos */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--text-color);
+    max-width: 80%;
+    margin: 0 auto 30px;
+}
