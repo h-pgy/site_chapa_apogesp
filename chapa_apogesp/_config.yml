@@ -1,55 +1,40 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: Meu Site Jekyll
+description: >
+  Site baseado em Jekyll com navegação em single page.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+banner_title: "Chapa 1"
+banner_subtitle: "Eleições para Retomada da APOGESP"
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+colors:
+  primary: "#114B5F"
+  secondary: "#00AFB9"
+  highlight: "#00AFB9"
+  text: "#553A41"
+  text_inverted: "#CEE1EB"
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+membros:
+  - nome: "Maria Camila Florêncio"
+    cargo: "Diretoria Geral"
+    bio: "Maria Camila é APPGG desde agosto de 2017 e está alocada na PGM. Possui dezoito anos de experiência em elaboração, implementação, monitoramento e avaliação de projetos sociais no terceiro setor e políticas públicas governamentais na área de saúde, educação, inovação e tecnologia, transparência, controle e participação social. Como formação, fez Bacharelado e Mestrado em Direito, e Doutorado em Administração Pública e Governo."
+    imagem: "/assets/img/maria_camila.jpeg"
+
+  - nome: "Caio Rocha"
+    cargo: "Diretoria Administrativa e Financeira"
+    bio: "Caio Rocha é APPGG desde agosto de 2024 e está alocado na SMADS. Engenheiro químico de formação com mestrado em Economia, possui experiência no setor privado, especialmente em consultoria de gestão.  Veio para o setor público com o intuito de dar maior significado a sua carreira, impactando positivamente a vida na cidade."
+    imagem: "/assets/img/caio_rocha.jpeg"
+
+  - nome: "Henrique Pougy"
+    cargo: "Diretoria de Assuntos Profissionais e Formação Continuada"
+    bio: "Henrique Pougy é Analista de Políticas Públicas e Gestão Governamental (APPGG) desde 2016, atuando na área de dados e analytics da Prefeitura de São Paulo. Formado em Ciências Sociais, é especialista em Ciência de Dados e Big Data e mestre em Sistemas Inteligentes, com foco em estatística bayesiana. Acredita no potencial estratégico da carreira de APPGGs e defende que o reconhecimento já conquistado no alto escalão da Prefeitura se traduza em melhores condições de remuneração e direitos efetivos."
+    imagem: "/assets/img/pougy.jpeg"
+
+  - nome: "Odilon Alves Cândido"
+    cargo: "Diretoria de Assuntos Jurídicos"
+    bio: "Odilon Alves Cândido é APPGG desde julho de 2024 e está alocado na SEGES. Bacharel em Direito, Mestrando Profissional em Gestão e Políticas Públicas pela FGV e Advogado, possui 10 anos de experiência no setor público em diversas funções. Acredita na valorização de todas e todos os APPGG´s como um vetor transformador da gestão pública municipal"
+    imagem: "/assets/img/odilon.jpeg"
+
+  - nome: "Diretoria de Assuntos Internacionais e Comunicação"
+    cargo: "Cargo do Membro 5"
+    bio: "João Resende está na carreira de APPGG desde fevereiro de 2022, atuando em SEGES. Antes disso trabalhou na CGM, Prefeitura de Osasco e Secretaria Estadual de Desenvolvimento Social de SP, com transparência pública, planejamento governamental e indicadores sociais. É sociólogo e mestre em gestão de políticas públicas. Foi membro da Comissão que buscou efetivar o direito das nomeações dos(as) APPGGs aprovados(as) no primeiro concurso da carreira e não nomeados(as) em 2016."
+    imagem: "/assets/img/joao_resende.jpeg"
