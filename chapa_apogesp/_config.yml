@@ -11,3 +11,30 @@ colors:
   highlight: "#00AFB9"
   text: "#553A41"
   text_inverted: "#CEE1EB"
+
+
+membros:
+  - nome: "Maria Camila Florêncio"
+    cargo: "Diretoria Geral"
+    bio: "Maria Camila é APPGG desde agosto de 2017 e está alocada na PGM. Possui dezoito anos de experiência em elaboração, implementação, monitoramento e avaliação de projetos sociais no terceiro setor e políticas públicas governamentais na área de saúde, educação, inovação e tecnologia, transparência, controle e participação social. Como formação, fez Bacharelado e Mestrado em Direito, e Doutorado em Administração Pública e Governo."
+    imagem: "/assets/img/maria_camila.jpeg"
+
+  - nome: "Caio Rocha"
+    cargo: "Diretoria Administrativa e Financeira"
+    bio: "Caio Rocha é APPGG desde agosto de 2024 e está alocado na SMADS. Engenheiro químico de formação com mestrado em Economia, possui experiência no setor privado, especialmente em consultoria de gestão.  Veio para o setor público com o intuito de dar maior significado a sua carreira, impactando positivamente a vida na cidade."
+    imagem: "/assets/img/caio_rocha.jpeg"
+
+  - nome: "Henrique Pougy"
+    cargo: "Diretoria de Assuntos Profissionais e Formação Continuada"
+    bio: "Henrique Pougy é Analista de Políticas Públicas e Gestão Governamental (APPGG) desde 2016, atuando na área de dados e analytics da Prefeitura de São Paulo. Formado em Ciências Sociais, é especialista em Ciência de Dados e Big Data e mestre em Sistemas Inteligentes, com foco em estatística bayesiana. Acredita no potencial estratégico da carreira de APPGGs e defende que o reconhecimento já conquistado no alto escalão da Prefeitura se traduza em melhores condições de remuneração e direitos efetivos."
+    imagem: "/assets/img/pougy.jpeg"
+
+  - nome: "Odilon Alves Cândido"
+    cargo: "Diretoria de Assuntos Jurídicos"
+    bio: "Odilon Alves Cândido é APPGG desde julho de 2024 e está alocado na SEGES. Bacharel em Direito, Mestrando Profissional em Gestão e Políticas Públicas pela FGV e Advogado, possui 10 anos de experiência no setor público em diversas funções. Acredita na valorização de todas e todos os APPGG´s como um vetor transformador da gestão pública municipal"
+    imagem: "/assets/img/odilon.jpeg"
+
+  - nome: "Diretoria de Assuntos Internacionais e Comunicação"
+    cargo: "Cargo do Membro 5"
+    bio: "João Resende está na carreira de APPGG desde fevereiro de 2022, atuando em SEGES. Antes disso trabalhou na CGM, Prefeitura de Osasco e Secretaria Estadual de Desenvolvimento Social de SP, com transparência pública, planejamento governamental e indicadores sociais. É sociólogo e mestre em gestão de políticas públicas. Foi membro da Comissão que buscou efetivar o direito das nomeações dos(as) APPGGs aprovados(as) no primeiro concurso da carreira e não nomeados(as) em 2016."
+    imagem: "/assets/img/joao_resende.jpeg"

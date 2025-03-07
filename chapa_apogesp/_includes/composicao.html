@@ -1,4 +1,17 @@
 <section id="composicao" class="section">
-    <h2 class="section-title">Composição</h2>
-    <p class="section-subtitle">Equipe e organização do projeto.</p>
+    <h2 class="section-title">Composição da Chapa</h2>
+    <p class="section-subtitle">
+        Conheça os membros da nossa chapa, comprometidos em fortalecer a carreira e aprimorar a gestão pública.
+    </p>
+
+    <div class="composicao-grid">
+        {% for membro in site.membros %}
+        <div class="membro-card">
+            <img src="{{ membro.imagem | relative_url }}" alt="{{ membro.nome }}" class="membro-img">
+            <h3 class="membro-nome">{{ membro.nome }}</h3>
+            <p class="membro-cargo">{{ membro.cargo }}</p>
+            <p class="membro-bio">{{ membro.bio }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </section>
