@@ -71,6 +71,23 @@
                 });
             });
         });
+
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
+        }
+
+        // Fecha o menu se o usuário clicar fora dele
+        document.addEventListener("click", function (event) {
+            const menu = document.querySelector(".nav-links");
+            const burger = document.querySelector(".burger-menu");
+
+            // Verifica se o clique foi fora do menu e do ícone do menu
+            if (!menu.contains(event.target) && !burger.contains(event.target)) {
+                menu.classList.remove("active");
+            }
+        });
+
         </script>
 
 </body>
