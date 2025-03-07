@@ -190,37 +190,74 @@ html {
 .banner {
     position: relative;
     width: 100%;
-    height: 75vh; /* Ocupa 75% da tela inicial para destacar o banner */
+    height: 75vh;
     background: url("../img/banner.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
-    align-items: flex-end; /* Alinha o conteúdo na parte inferior */
+    align-items: flex-end;
     justify-content: center;
-    padding-bottom: 8vh; /* Move o texto ainda mais para baixo */
+    padding-bottom: 8vh;
+    text-align: center;
 }
 
 /* Conteúdo do banner */
 .banner-content {
     text-align: center;
     color: var(--inverse-text-color);
-    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor leitura */
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     max-width: 80%;
 }
 
-/* Estilização do título */
+/* Título do banner - Ajuste responsivo */
 .banner-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+    word-wrap: break-word;
+    max-width: 90%;
 }
 
-/* Estilização do subtítulo */
+/* Subtítulo do banner */
 .banner-subtitle {
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
+    max-width: 80%;
+    margin: 0 auto;
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+    .banner-title {
+        font-size: 3rem; /* Reduz o tamanho do título */
+    }
+
+    .banner-subtitle {
+        font-size: 1.5rem; /* Reduz o tamanho do subtítulo */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 2.5rem; /* Reduz ainda mais o título */
+    }
+
+    .banner-subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 2rem; /* Mantém o título dentro da tela */
+    }
+
+    .banner-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
 
 /* Seção Diagnóstico - Layout centralizado */
 .diagnostico-container {
