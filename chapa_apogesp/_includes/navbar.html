@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="navbar-content">
+        <a href="#banner" class="nav-item">Início</a>
+        <a href="#diagnostico" class="nav-item">Diagnóstico</a>
+        <a href="#valores" class="nav-item">Valores</a>
+        <a href="#temas" class="nav-item">Temas Prioritários</a>
+        <a href="#composicao" class="nav-item">Composição</a>
+    </div>
+</nav>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll(".section").forEach(section => section.classList.remove("active-section"));
+                    entry.target.classList.add("active-section");
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => observer.observe(section));
+    });
+</script>

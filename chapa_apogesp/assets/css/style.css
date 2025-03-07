@@ -1,0 +1,171 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px; /* Define uma altura fixa para evitar expansão no hover */
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Container dos itens da Navbar */
+.navbar-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Itens da Navbar */
+.nav-item {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 20px; /* Ajuste do padding para se encaixar na navbar */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    line-height: 40px; /* Garante que o texto fique centralizado verticalmente */
+}
+
+/* Efeito hover: Alinha perfeitamente o fundo ao tamanho da navbar */
+.nav-item:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 20px; /* Garante que o tamanho não mude no hover */
+}
+
+
+/* Section style basico */
+
+/* Seções */
+
+.section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilização do Título da Seção */
+.section-title {
+    font-size: 2.8rem; /* Aumenta o tamanho */
+    font-weight: bold; /* Deixa o título mais marcante */
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Estilização do Subtítulo da Seção */
+.section-subtitle {
+    font-size: 1.6rem; /* Aumenta o tamanho do subtítulo */
+    font-weight: 300;
+    color: var(--text-color);
+    max-width: 80%;
+    margin: 0 auto 30px; /* Centraliza e dá espaço abaixo */
+}
+
+
+.active-section {
+    background: var(--highlight-color);
+}
+
+
+
+/* Garantir que o fundo ocupe toda a tela */
+body {
+    background-color: var(--primary-color); /* Usa a cor principal do _config.yml */
+    color: var(--text-color);
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Centralizar o conteúdo e evitar margens brancas */
+main {
+    max-width: 100%;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+
+/* Seções */
+.section {
+    padding: 60px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--inverse-text-color); /* Adapta para contraste */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--inverse-text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo, .footer-github {
+    height: 40px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo, .footer-github {
+    height: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 75vh; /* Ocupa 75% da tela inicial para destacar o banner */
+    background: url("../img/banner.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end; /* Alinha o conteúdo na parte inferior */
+    justify-content: center;
+    padding-bottom: 8vh; /* Move o texto ainda mais para baixo */
+}
+
+/* Conteúdo do banner */
+.banner-content {
+    text-align: center;
+    color: var(--inverse-text-color);
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor leitura */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* Estilização do título */
+.banner-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilização do subtítulo */
+.banner-subtitle {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
