@@ -137,6 +137,7 @@ body {
     color: var(--text-color);
     width: 100%;
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Centralizar o conteúdo e evitar margens brancas */
@@ -144,6 +145,20 @@ main {
     max-width: 100%;
     overflow-x: hidden; /* Evita rolagem horizontal */
 }
+
+/* Títulos mais impactantes */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Deixa os títulos mais marcantes */
+}
+
+/* Parágrafos e texto normal */
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    line-height: 1.6;
+}
+
 
 
 /* Seções */
@@ -212,7 +227,7 @@ html {
 
 /* Título do banner - Ajuste responsivo */
 .banner-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
     word-wrap: break-word;
@@ -221,7 +236,7 @@ html {
 
 /* Subtítulo do banner */
 .banner-subtitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     max-width: 80%;
     margin: 0 auto;
