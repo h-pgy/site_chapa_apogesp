@@ -137,6 +137,7 @@ body {
     color: var(--text-color);
     width: 100%;
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Centralizar o conteúdo e evitar margens brancas */
@@ -144,6 +145,20 @@ main {
     max-width: 100%;
     overflow-x: hidden; /* Evita rolagem horizontal */
 }
+
+/* Títulos mais impactantes */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Deixa os títulos mais marcantes */
+}
+
+/* Parágrafos e texto normal */
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    line-height: 1.6;
+}
+
 
 
 /* Seções */
@@ -212,7 +227,7 @@ html {
 
 /* Título do banner - Ajuste responsivo */
 .banner-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
     word-wrap: break-word;
@@ -221,7 +236,7 @@ html {
 
 /* Subtítulo do banner */
 .banner-subtitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     max-width: 80%;
     margin: 0 auto;
@@ -272,19 +287,25 @@ html {
 
 /* Imagem Centralizada */
 .diagnostico-img {
-    width: 50%; /* Ajuste de tamanho para manter proporção */
-    max-width: 400px;
+    width: 65%; /* Ajuste de tamanho para manter proporção */
+    max-width: 45%;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
-/* Ajuste no tamanho dos parágrafos */
+/* Texto da seção Diagnóstico - Agora justificado, maior e com mais espaçamento */
+.diagnostico-text {
+    max-width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+/* Ajuste nos parágrafos */
 .diagnostico-text p {
-    font-size: 1.2rem; /* Aumenta o tamanho do texto */
-    line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor leitura */
-    color: var(--text-color);
-    margin-bottom: 15px; /* Dá um respiro entre os parágrafos */
+    font-size: 1.3rem; /* Aumenta o tamanho do texto */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    margin-bottom: 20px; /* Dá mais espaçamento entre os parágrafos */
 }
 
 
@@ -454,5 +475,66 @@ html {
 @media (max-width: 768px) {
     .composicao-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 coluna no celular */
+    }
+}
+
+
+/* Seção Junte-se a Nós */
+.junte-se {
+    background: url("../img/junte-se-banner.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box para destacar o conteúdo */
+/* Box para destacar o conteúdo */
+.junte-se-container {
+    background: rgba(0, 0, 0, 0.80); /* Cor secundária com 85% de opacidade */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    color: var(--inverse-text-color);
+}
+
+/* Título grande */
+.junte-se-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Mensagem principal em destaque */
+.junte-se-highlight {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+/* Texto normal */
+.junte-se-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .junte-se-title {
+        font-size: 2.5rem;
+    }
+    
+    .junte-se-highlight {
+        font-size: 1.3rem;
+    }
+
+    .junte-se-container {
+        max-width: 90%;
+        padding: 30px;
     }
 }
