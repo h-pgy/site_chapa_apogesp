@@ -462,3 +462,64 @@ html {
         grid-template-columns: repeat(1, 1fr); /* 1 coluna no celular */
     }
 }
+
+
+/* Seção Junte-se a Nós */
+.junte-se {
+    background: url("../img/junte-se-banner.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box para destacar o conteúdo */
+/* Box para destacar o conteúdo */
+.junte-se-container {
+    background: rgba(0, 0, 0, 0.80); /* Cor secundária com 85% de opacidade */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    color: var(--inverse-text-color);
+}
+
+/* Título grande */
+.junte-se-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Mensagem principal em destaque */
+.junte-se-highlight {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+/* Texto normal */
+.junte-se-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .junte-se-title {
+        font-size: 2.5rem;
+    }
+    
+    .junte-se-highlight {
+        font-size: 1.3rem;
+    }
+
+    .junte-se-container {
+        max-width: 90%;
+        padding: 30px;
+    }
+}
