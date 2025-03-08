@@ -272,19 +272,25 @@ html {
 
 /* Imagem Centralizada */
 .diagnostico-img {
-    width: 50%; /* Ajuste de tamanho para manter proporção */
-    max-width: 400px;
+    width: 65%; /* Ajuste de tamanho para manter proporção */
+    max-width: 45%;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
-/* Ajuste no tamanho dos parágrafos */
+/* Texto da seção Diagnóstico - Agora justificado, maior e com mais espaçamento */
+.diagnostico-text {
+    max-width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+/* Ajuste nos parágrafos */
 .diagnostico-text p {
-    font-size: 1.2rem; /* Aumenta o tamanho do texto */
-    line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor leitura */
-    color: var(--text-color);
-    margin-bottom: 15px; /* Dá um respiro entre os parágrafos */
+    font-size: 1.3rem; /* Aumenta o tamanho do texto */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    margin-bottom: 20px; /* Dá mais espaçamento entre os parágrafos */
 }
 
 
